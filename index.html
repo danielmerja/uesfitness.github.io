@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytra Gessler - Personal Training</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-black text-white fixed w-full z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">Paytra Gessler</div>
+            <button id="mobile-menu-button" class="md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
+                </svg>
+            </button>
+            <div id="menu" class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-gray-300">Home</a>
+                <a href="#services" class="hover:text-gray-300">Services</a>
+                <a href="#about" class="hover:text-gray-300">About</a>
+                <a href="#contact" class="hover:text-gray-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen bg-cover bg-center" style="background-image: url('/public/hero.jpg')">
+        <div class="h-full bg-black bg-opacity-50 flex items-center">
+            <div class="container mx-auto px-4 text-white">
+                <h1 class="text-5xl md:text-6xl font-bold mb-4">Train With Paytra</h1>
+                <p class="text-xl mb-4">ISSA Certified Sports Trainer, Youth Trainer, Corrective Exercise Specialist, Nutrition Expert</p>
+                <a href="#contact" class="bg-red-600 text-white px-8 py-3 rounded-full hover:bg-red-700">Start Your Fitness Journey</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Our Gallery</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="/public/1.jpg" alt="Fitness Image 1" class="w-full h-64 object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="/public/2.jpg" alt="Fitness Image 2" class="w-full h-64 object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="/public/3.jpg" alt="Fitness Image 3" class="w-full h-64 object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="/public/4.jpg" alt="Fitness Image 4" class="w-full h-64 object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="/public/5.jpg" alt="Fitness Image 5" class="w-full h-64 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">Personal Training</h3>
+                    <p class="text-gray-600">Customized workout plans designed for your specific goals</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">Nutrition Coaching</h3>
+                    <p class="text-gray-600">Expert guidance on nutrition to complement your fitness journey</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">Group Training</h3>
+                    <p class="text-gray-600">High-energy group sessions for motivation and results</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">About Paytra</h2>
+            <div class="max-w-4xl mx-auto">
+                <p class="text-lg mb-6">Hi! Paytra here — your friendly local fitness coach! My philosophy is that fitness should be FUN! I credit my high energy and pep-talk-filled workouts with creating a healthy and motivational environment for my clients.</p>
+                <p class="text-lg mb-6">I am also a professional performer, dancer, and singer— and that truly has shaped my training practice and approach. As someone who constantly needs to be at peak performance, I thrive with helping my clients find confidence and drive in their daily lives.</p>
+                <div class="bg-white p-6 rounded-lg shadow-lg mt-8">
+                    <h3 class="text-xl font-bold mb-4">Specialties</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Weight loss, weight lifting, circuit training</li>
+                        <li>Glute building, HIIT, corrective exercise</li>
+                        <li>Toning, in-person and virtual training</li>
+                        <li>Kettle bells, in-home training</li>
+                        <li>Nutrition programs, sports training</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Training Packages</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Solo Sessions</h3>
+                    <ul class="space-y-3">
+                        <li>First time trial: $100</li>
+                        <li>Single Session: $140</li>
+                        <li>Pack of 5: $650</li>
+                        <li>Pack of 10: $1,250</li>
+                        <li>Pack of 20: $2,400</li>
+                    </ul>
+                    <p class="mt-4 text-sm text-gray-600">*First time deal: Buy pack of 5, get one session free</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Train with a Friend</h3>
+                    <ul class="space-y-3">
+                        <li>First time trial: $150</li>
+                        <li>Single Session: $200</li>
+                        <li>Pack of 5: $950</li>
+                        <li>Pack of 10: $1,850</li>
+                        <li>Pack of 20: $3,600</li>
+                    </ul>
+                    <p class="mt-4 text-sm text-gray-600">*Contact for small group training prices</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">FAQ</h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Where do you train?</h3>
+                    <ul class="list-disc pl-5">
+                        <li>In-home or outdoors (with resistance bands and yoga mat)</li>
+                        <li>Your Building gym</li>
+                        <li>Private training gym on 85th and York</li>
+                        <li>Private training gym on 80th and lex</li>
+                    </ul>
+                </div>
+                <!-- Add more FAQ items -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Contact Me</h2>
+            <div class="max-w-lg mx-auto text-center mb-8">
+                <a href="mailto:your-email@example.com" class="text-xl hover:text-gray-300">your-email@example.com</a>
+                <div class="mt-4">
+                    <a href="your-calendly-link" class="bg-red-600 text-white px-8 py-3 rounded-full hover:bg-red-700 inline-block">Schedule a Session</a>
+                </div>
+            </div>
+            <div class="max-w-lg mx-auto">
+                <form class="space-y-4">
+                    <input type="text" placeholder="Name" class="w-full p-3 rounded text-black">
+                    <input type="email" placeholder="Email" class="w-full p-3 rounded text-black">
+                    <textarea placeholder="Message" class="w-full p-3 rounded h-32 text-black"></textarea>
+                    <button type="submit" class="bg-red-600 text-white px-8 py-3 rounded-full hover:bg-red-700 w-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
