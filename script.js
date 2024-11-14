@@ -19,3 +19,5 @@ document.querySelectorAll('#menu a').forEach(link => {
         }
     });
 });
+
+// Remove all carousel-related code
