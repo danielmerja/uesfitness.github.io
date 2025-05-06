@@ -10,12 +10,25 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#2DD4BF',
-                        secondary: '#8B5CF6',
-                        accent: '#FB923C',
+                        primary: '#FFDE59',
+                        secondary: '#9562C8',
+                        accent: '#FFDE59',
                     }
                 }
-            }
+            },
+            plugins: [
+                function({ addComponents }) {
+                    addComponents({
+                        '.aspect-w-16': {
+                            position: 'relative',
+                            paddingBottom: '56.25%'
+                        },
+                        '.aspect-h-9': {
+                            position: 'relative'
+                        }
+                    })
+                }
+            ]
         }
     </script>
 </head>
@@ -43,7 +56,7 @@
             <div class="container mx-auto px-4 text-white">
                 <h1 class="text-4xl md:text-5xl font-bold mb-3">Train With Paytra</h1>
                 <p class="text-lg md:text-xl mb-4">ISSA Certified Sports Trainer, Youth Trainer, Corrective Exercise Specialist, Nutrition Expert</p>
-                <a href="#contact" class="bg-accent text-white px-8 py-3 rounded-full hover:bg-accent/90 transition duration-300">Start Your Fitness Journey</a>
+                <a href="#contact" class="bg-secondary text-white px-8 py-3 rounded-full hover:bg-secondary/90 transition duration-300">Start Your Fitness Journey</a>
             </div>
         </div>
     </section>
@@ -54,13 +67,12 @@
             <h2 class="text-4xl font-bold text-center mb-12">About Paytra</h2>
             <div class="max-w-4xl mx-auto">
                 <div class="space-y-6 text-lg">
-                    <p>Hi! Paytra here — your friendly local fitness coach! My philosophy is that fitness should be FUN! I credit my high energy and pep-talk-filled workouts with creating a healthy and motivational environment for my clients. My coaching style is relaxed, confident, and challenging— so you'll be laughing and smiling while also cursing me for making you do another set of burpees (wink wink). I believe in being accessible to clients… my work doesn't stop at the gym. I'm always a text or call away about any fitness or nutrition related questions.</p>
+                    <p>Hi! Paytra here — your friendly "pocket" fitness coach *wink wink*
+I decided to start my virtual training/nutrition business after 10 years of working with so many incredible women who were professionals, moms, and/or entrepreneurs. I realized that time and money is usually the #1 reason people don't stick to a fitness routine. Thats why I'm here — to be your on call accountability parter, trainer, and hype girl both in and out of the gym. I'm so passionate about helping other women feel and look their best!</p>
                     
-                    <p>I am also a professional performer, dancer, and singer— and that truly has shaped my training practice and approach. As someone who constantly needs to be at peak performance, I thrive with helping my clients find confidence and drive in their daily lives and creating a realistic program to help them achieve their goals.</p>
+                    <p>My philosophy is that fitness should be FUN, ACCESSIBLE, and AFFORDABLE. I credit my high energy and pep-talk-filled workouts with creating a healthy and motivational environment for my clients. My coaching style is relaxed, confident, and challenging— so you'll be laughing and smiling while also cursing me for making you do another set of burpees. I believe in being available to my clients… my work doesn't stop during our session. I'm always a text or call away about any fitness or nutrition related questions. Plus— virtual training and coaching allows for competitive prices and flexibility on time!</p>
                     
-                    <p>I began my journey 10 years ago, working in a commercial gym setting. From teens and young professionals, to older adults and the special needs population— I have worked with people of all ages and backgrounds! From there, I began building my own private clientele, and truly found my passion in helping them lose weight, correct injuries, and share my passion of weight training, circuit training, and HIIT with them!</p>
-                    
-                    <p>In my free time, you'll find me walking my Frenchie to Carl Schurz park, writing music in my home studio, or performing in the lower east side!</p>
+                    <p>As a professional musician, dancer, and artist— I think my love for entertaining and empowerment fuels my passion for using fitness as a way to change lives. I'm there with my clients through all the phases of life, making sure they stay on track in their fitness journey and continue to make time for themselves.</p>
                     
                     <p>Whether you're training for a marathon, want to correct a lower back injury through exercise, have a teen or child who needs a little extra push, or simply want a kick-ass workout while keeping it fun — I'm here for you!</p>
                 </div>
@@ -102,6 +114,19 @@
                                 <span>Nutrition Programs</span>
                             </div>
                         </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 max-w-lg mx-auto">
+                    <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
+                        <iframe 
+                            src="https://www.youtube.com/embed/MXOntfXYSVg" 
+                            title="Paytra Fitness" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen
+                            class="absolute top-0 left-0 w-full h-full"
+                        ></iframe>
                     </div>
                 </div>
 
