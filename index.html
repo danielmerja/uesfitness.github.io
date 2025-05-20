@@ -298,6 +298,23 @@ I decided to start my virtual training/nutrition business after 10 years of work
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-8 text-center">
+        <div class="container mx-auto px-4">
+            <div class="mb-4">
+                <a href="#home" class="px-3 hover:text-white transition duration-300">Home</a>
+                <span class="text-gray-500">|</span>
+                <a href="#pricing" class="px-3 hover:text-white transition duration-300">Pricing</a>
+                <span class="text-gray-500">|</span>
+                <a href="#contact" class="px-3 hover:text-white transition duration-300">Contact</a>
+            </div>
+            <p>&copy; <span id="currentYear"></span> Paytra Gessler. All Rights Reserved.</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
